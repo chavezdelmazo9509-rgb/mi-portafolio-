@@ -1,0 +1,369 @@
+/* Reinicio básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}	
+body {
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 1.6;
+    color: #e0e0ff;
+    background-color: #0d0d1a;
+    background-image: radial-gradient(circle at top, #1a1a3a, #0d0d1a);
+}
+
+/* Títulos con la fuente gamer */
+h1, h2 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Cabecera */
+header {
+    background-color: #0a0a14;
+    color: #39ff14;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 2px solid #39ff14;
+    box-shadow: 0 0 15px #39ff14;
+}
+
+header h1 {
+    text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+    margin-bottom: 15px;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #e0e0ff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+   nav a, button, a { cursor: url("cursor-crown.png") 20 5, pointer; }
+nav a:hover {
+    color: #ff2ec4;
+    text-shadow: 0 0 8px #ff2ec4;
+}
+
+/* Secciones */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #14142b;
+    border: 1px solid #39ff14;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.2);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #ff2ec4;
+    text-shadow: 0 0 6px #ff2ec4;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0a0a14;
+    color: #39ff14;
+    margin-top: 40px;
+    border-top: 2px solid #39ff14;
+}
+/* ---- Diseño responsive (pantallas angostas, ej. celulares) ---- */
+section#juegos { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; } .juego-card { background: #0a0a14; border: 1px solid #ff2ec4; border-radius: 8px; padding: 10px; width: 150px; text-align: center; } .juego-card img { width: 100%; border-radius: 4px; } .juego-card p { margin-top: 8px; color: #e0e0ff; } @media (max-width: 600px) { header h1 { font-size: 1.4rem; } nav ul { flex-direction: column; align-items: center; gap: 12px; } section { margin: 20px 15px; padding: 18px; } section h2 { font-size: 1.3rem; } body { font-size: 0.95rem; } }
+.juego-card img {
+    transition: transform 0.5s ease;
+}
+
+.juego-card img:hover {
+    transform: scale(1.30);
+}
+
+ .tiktok-embed { border: 3px solid #ff2ec4 !important; border-radius: 12px !important; box-shadow: 0 0 15px #ff2ec4; overflow: hidden; }
+ .logo { max-width: 500px; width: 100%; display: block; margin: 0 auto; border-radius: 8px; }
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 5px;
+    color: #e0e0ff;
+    font-weight: bold;
+}
+
+.skill-bar {
+    background: #0a0a14;
+    border: 1px solid #39ff14;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 18px;
+}
+
+.skill-level {
+    background: linear-gradient(90deg, #39ff14, #ff2ec4);
+    height: 100%;
+}
+nav a.activo {
+    color: #0d0d1a;
+    background-color: #39ff14;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-shadow: none;
+}
+.logro {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #0a0a14;
+    border: 1px solid #39ff14;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+}
+
+.logro-icono {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+#volver-arriba {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #39ff14;
+    color: #0d0d1a;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Rajdhani', sans-serif;
+    display: none;
+    box-shadow: 0 0 15px #39ff14;
+    z-index: 999;
+    cursor: url("cursor-crown.png") 20 5, pointer;
+}
+
+#volver-arriba:hover {
+    background-color: #ff2ec4;
+    box-shadow: 0 0 15px #ff2ec4;
+}
+#menu-toggle {
+    display: none;
+    background: none;
+    border: 2px solid #39ff14;
+    color: #39ff14;
+    font-size: 24px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin: 10px auto;
+    cursor: url("cursor-crown.png") 20 5, pointer;
+}
+
+@media (max-width: 600px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.abierto {
+        display: flex;
+    }
+}
+#saludo {
+    color: #39ff14;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.formulario-contacto label {
+    color: #ff2ec4;
+    font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    background: #0a0a14;
+    border: 1px solid #39ff14;
+    border-radius: 6px;
+    padding: 10px;
+    color: #e0e0ff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: #ff2ec4;
+    box-shadow: 0 0 8px #ff2ec4;
+}
+
+.formulario-contacto button {
+    background-color: #39ff14;
+    color: #0d0d1a;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 8px;
+    cursor: url("cursor-crown.png") 20 5, pointer;
+}
+
+.formulario-contacto button:hover {
+    background-color: #ff2ec4;
+}
+#modo-toggle {
+    background: none;
+    border: 2px solid #39ff14;
+    color: #39ff14;
+    font-size: 18px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin: 10px 6px;
+    cursor: url("cursor-crown.png") 20 5, pointer;
+}
+
+body.claro {
+    background-color: #f4f4fa;
+    background-image: none;
+    color: #1a1a2e;
+}
+
+body.claro header {
+    background-color: #ffffff;
+    color: #c81e1e;
+    border-bottom: 2px solid #c81e1e;
+    box-shadow: 0 0 8px rgba(200, 30, 30, 0.3);
+}
+
+body.claro nav a {
+    color: #1a1a2e;
+}
+
+body.claro nav a:hover {
+    color: #c81e1e;
+    text-shadow: none;
+}
+
+body.claro nav a.activo {
+    background-color: #c81e1e;
+    color: #ffffff;
+}
+
+body.claro section {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    color: #1a1a2e;
+}
+
+body.claro section h2 {
+    color: #c81e1e;
+    text-shadow: none;
+}
+
+body.claro footer {
+    background-color: #ffffff;
+    color: #c81e1e;
+    border-top: 2px solid #c81e1e;
+}
+
+body.claro .skill-bar,
+body.claro .logro,
+body.claro .juego-card {
+    background: #f7f7fb;
+    border-color: #ddd;
+}
+
+body.claro #volver-arriba {
+    background-color: #c81e1e;
+    color: #ffffff;
+    box-shadow: 0 0 8px rgba(200, 30, 30, 0.4);
+}
+
+body.claro #modo-toggle {
+    border-color: #c81e1e;
+    color: #c81e1e;
+}
+
+body.claro .formulario-contacto input,
+body.claro .formulario-contacto textarea {
+    background: #ffffff;
+    border-color: #ccc;
+    color: #1a1a2e;
+}
+
+body.claro .formulario-contacto button {
+    background-color: #c81e1e;
+    color: #ffffff;
+}
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox.abierto {
+    display: flex;
+}
+
+#lightbox-img {
+    max-width: 90%;
+    max-height: 85%;
+    border: 3px solid #39ff14;
+    border-radius: 8px;
+    box-shadow: 0 0 25px #39ff14;
+}
+
+#lightbox-cerrar {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #ff2ec4;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: url("cursor-crown.png") 20 5, pointer;
+}
