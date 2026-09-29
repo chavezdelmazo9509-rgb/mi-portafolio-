@@ -306,7 +306,8 @@ body.claro footer {
 
 body.claro .skill-bar,
 body.claro .logro,
-body.claro .juego-card {
+body.claro .juego-card,
+body.claro .lista-habilidades li {
     background: #f7f7fb;
     border-color: #ddd;
 }
@@ -366,4 +367,118 @@ body.claro .formulario-contacto button {
     font-size: 45px;
     font-weight: bold;
     cursor: url("cursor-crown.png") 20 5, pointer;
+}
+.lista-habilidades {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.lista-habilidades li {
+    background: #0a0a14;
+    border: 1px solid #39ff14;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-weight: bold;
+    color: #e0e0ff;
+}
+
+.botones-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.btn-principal, .btn-secundario {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: url("cursor-crown.png") 20 5, pointer;
+}
+
+.btn-principal {
+    background-color: #39ff14;
+    color: #0d0d1a;
+}
+
+.btn-secundario {
+    background-color: transparent;
+    color: #39ff14;
+    border: 1px solid #39ff14;
+}
+
+body.claro .btn-principal {
+    background-color: #c81e1e;
+    color: #ffffff;
+}
+
+body.claro .btn-secundario {
+    color: #c81e1e;
+    border-color: #c81e1e;
+}
+
+.tarjeta-proyecto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    background: #0a0a14;
+    border: 1px solid #39ff14;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-proyecto img {
+    width: 220px;
+    max-width: 100%;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.tarjeta-proyecto-texto h3 {
+    color: #ff2ec4;
+    margin-bottom: 6px;
+}
+
+.tarjeta-proyecto-texto a {
+    color: #39ff14;
+    font-weight: bold;
+}
+
+body.claro .tarjeta-proyecto {
+    background: #f7f7fb;
+    border-color: #ddd;
+}
+   .titulo-oculto {
+       position: absolute;
+       width: 1px;
+       height: 1px;
+       padding: 0;
+       margin: -1px;
+       overflow: hidden;
+       clip: rect(0, 0, 0, 0);
+       white-space: nowrap;
+       border: 0;
+   }
+   .saltar-enlace {
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    background: #39ff14;
+    color: #0d0d1a;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 2000;
+    transition: top 0.2s ease;
+}
+
+.saltar-enlace:focus {
+    top: 10px;
 }

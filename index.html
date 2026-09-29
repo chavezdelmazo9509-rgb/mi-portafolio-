@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omar Chávez — Portafolio</title>
-    <meta name="description" content="Portafolio de Omar Chávez: aprendiz de programación web y creador de contenido gaming en TikTok y YouTube. Proyectos, habilidades y clips.">
+    <title>Omar Chávez — Desarrollador Web Freelance | Portafolio</title>
+    <meta name="description" content="Portafolio de Omar Chávez, desarrollador web freelance (HTML, CSS y JavaScript) y creador de contenido gaming en TikTok y YouTube. Proyectos, habilidades y contacto.">
+       <link rel="canonical" href="https://omarex95.netlify.app/">
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/jpeg" href="omarex.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,10 +18,11 @@
 </head>
 <body>
 
+       <a href="#main-content" class="saltar-enlace">Saltar al contenido principal</a>
     <header>
-        <h1><img src="omarex.jpg" alt="OMAREX" class="logo"></h1>
-	 <button id="menu-toggle" aria-label="Abrir menú">☰</button>
-	<button id="modo-toggle" title="Cambiar modo">⚡</button>
+        <h1><span class="titulo-oculto">Omar Chávez — Desarrollador Web Freelance y Creador de Contenido Gamer</span><img src="omarex.jpg" alt="Logo de OMAREX" class="logo"></h1>
+	 <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+	<button id="modo-toggle" title="Cambiar modo" aria-label="Cambiar modo claro u oscuro">⚡</button>
         <nav>
             <ul>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -34,41 +36,53 @@
         </nav>
     </header>
 
-    <main>
+       <main id="main-content">
 
-      <section id="sobre-mi">
+        <section id="sobre-mi">
     <h2>Sobre mí</h2>
 <p id="saludo"></p>
-      <p>Soy Omar Chávez del Mazo, estudié Ingeniería de Sistemas y desde ahí nació mi interés por combinar tecnología y contenido digital.</p>
-    <p>Ahora mismo estoy aprendiendo a programar páginas web desde cero (HTML, CSS y JavaScript), construyendo este portafolio como mi primer proyecto real, mientras sigo creando contenido de videojuegos en TikTok y YouTube.</p>
-    <p>Mi meta es convertirme en desarrollador web freelance y seguir creciendo como creador de contenido gamer, combinando ambos mundos en proyectos propios.</p>
-<a href="CV_Omar_Chavez.pdf" download style="display: inline-block; margin-top: 15px; padding: 10px 20px; background-color: #39ff14; color: #0d0d1a; font-weight: bold; text-decoration: none; border-radius: 6px;">📄 Descargar CV</a>
+      <p><strong>Disponible para proyectos freelance de páginas web.</strong></p>
+      <p>Soy Omar Chávez del Mazo, estudié Ingeniería de Sistemas. Construyo páginas web con HTML, CSS y JavaScript, cuidando el diseño y la experiencia de quien la usa.</p>
+    <p>Además creo contenido de videojuegos en TikTok y YouTube, así que entiendo tanto el lado técnico como el lado creativo de internet.</p>
+    <p>Mi meta es seguir creciendo como desarrollador freelance, combinando ambos mundos en proyectos propios.</p>
+<div class="botones-cta">
+<a href="#contacto" class="btn-principal">✉️ Hablemos de tu proyecto</a>
+<a href="CV_Omar_Chavez.pdf" download class="btn-secundario">📄 Descargar CV</a>
+</div>
 </section>
 
-      <section id="habilidades">
+        <section id="habilidades">
     <h2>Habilidades</h2>
-    <div class="skill">
-        <span>HTML5</span>
-        <div class="skill-bar"><div class="skill-level" style="width: 60%;"></div></div>
-    </div>
-    <div class="skill">
-        <span>CSS</span>
-        <div class="skill-bar"><div class="skill-level" style="width: 50%;"></div></div>
-    </div>
-    <div class="skill">
-        <span>JavaScript (aprendiendo)</span>
-        <div class="skill-bar"><div class="skill-level" style="width: 20%;"></div></div>
-    </div>
-</section>
-
-        <section id="proyectos">
-            <h2>Proyectos</h2>
-          <ul>
-	<li>🎮 <a href="https://omarexgamer.netlify.app/" target="_blank" rel="noopener">OMAREX Games</a> — catálogo de juegos con minijuegos propios (memoria y Snake), programado desde cero</li>
-        <li>Este portafolio gamer, programado por mí desde cero (HTML, CSS)</li>
-        <li>Canal de YouTube de gameplay (omarex_official)</li>
-        <li>Contenido de gaming en TikTok (@omarex690)</li>
+    <ul class="lista-habilidades">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Git y GitHub</li>
     </ul>
+</section>
+             <section id="proyectos">
+            <h2>Proyectos de desarrollo</h2>
+          <div class="tarjeta-proyecto">
+            <img src="imagenes/omarex-games-captura.jpg" alt="OMAREX Games project screenshot showing a game catalog page with a menu of mini games, red and black styling, and the text OMAREX Games on a dark background">
+            <div class="tarjeta-proyecto-texto">
+                <h3>OMAREX Games</h3>
+                <p>Catálogo de juegos con minijuegos propios (memoria y Snake), programado desde cero en HTML, CSS y JavaScript.</p>
+                <p><a href="https://omarexgamer.netlify.app/" target="_blank" rel="noopener">Ver en Netlify</a> | <a href="https://chavezdelmazo9509-rgb.github.io/omarex-games-/" target="_blank" rel="noopener">Ver en GitHub Pages</a></p>
+            </div>
+          </div>
+          <div class="tarjeta-proyecto">
+            <img src="imagenes/portafolio-captura.jpg" alt="Portfolio website screenshot showing the OMAREX homepage with a dark theme, navigation links, and project sections, designed with a clean gaming style and strong modern look">
+            <div class="tarjeta-proyecto-texto">
+                <h3>Este portafolio</h3>
+                <p>Página programada por mí desde cero con HTML y CSS, con modo claro/oscuro y animaciones al hacer scroll.</p>
+            </div>
+          </div>
+
+            <h2>Contenido y redes</h2>
+            <ul>
+                <li>Canal de YouTube de gameplay (omarex_official)</li>
+                <li>Contenido de gaming en TikTok (@omarex690)</li>
+            </ul>
 </section>
 <section id="logros">
     <h2>Logros</h2>
@@ -96,14 +110,13 @@
     <a href="https://www.tiktok.com/@omarex690/video/7610281327312637185" target="_blank" style="color: #ff2ec4;">¿No carga? Ver en TikTok</a>
 </p>
 </section>
-	<section id="juegos"><h2>Juegos que juego</h2><div class="juego-card"><img src="imagenes/hogwarts.jpg" alt="Hogwarts Legacy"><p>Hogwarts Legacy</p></div><div class="juego-card"><img src="imagenes/warzone.jpg" alt="Warzone"><p>Warzone</p></div><div class="juego-card"><img src="imagenes/f1.jpg" alt="F1"><p>F1</p></div><div class="juego-card"><img src="imagenes/deltaforce.jpg" alt="Delta Force"><p>Delta Force</p></div><div class="juego-card"><img src="imagenes/wherewindsmeet.jpg" alt="Where Winds Meet"><p>Where Winds Meet</p></div></section>
+    <section id="juegos"><h2>Juegos que juego</h2><div class="juego-card"><img src="imagenes/hogwarts.jpg" alt="Hogwarts Legacy" width="526" height="296" loading="lazy"><p>Hogwarts Legacy</p></div><div class="juego-card"><img src="imagenes/warzone.jpg" alt="Warzone" width="760" height="572" loading="lazy"><p>Warzone</p></div><div class="juego-card"><img src="imagenes/f1.jpg" alt="F1" width="734" height="568" loading="lazy"><p>F1</p></div><div class="juego-card"><img src="imagenes/deltaforce.jpg" alt="Delta Force" width="610" height="438" loading="lazy"><p>Delta Force</p></div><div class="juego-card"><img src="imagenes/wherewindsmeet.jpg" alt="Where Winds Meet" width="680" height="446" loading="lazy"><p>Where Winds Meet</p></div></section>
 
       <section id="contacto">
     <h2>Contacto</h2>
     <p>Correo: <a href="mailto:chavezdelmazo9509@gmail.com">chavezdelmazo9509@gmail.com</a></p>
-    <p>Redes: <a href="https://www.tiktok.com/@omarex690" target="_blank" rel="noopener">TikTok @omarex690</a> | <a href="https://www.youtube.com/@omarex_official" target="_blank" rel="noopener">YouTube @omarex_official</a></p>
-
-    <form action="https://formspree.io/f/mgavwyop" method="POST" class="formulario-contacto">
+   <p>Redes: <a href="https://www.tiktok.com/@omarex690" target="_blank" rel="noopener">TikTok @omarex690</a> | <a href="https://www.youtube.com/@omarex_official" target="_blank" rel="noopener">YouTube @omarex_official</a> | <a href="https://github.com/chavezdelmazo9509-rgb" target="_blank" rel="noopener">GitHub</a></p>
+   <form action="https://formspree.io/f/mgavwyop" method="POST" class="formulario-contacto">
         <label for="nombre">Nombre</label>
         <input type="text" id="nombre" name="nombre" required>
 
@@ -166,11 +179,14 @@ const navUl = document.querySelector("nav ul");
 
 menuToggle.addEventListener("click", function() {
     navUl.classList.toggle("abierto");
+    const abierto = navUl.classList.contains("abierto");
+    menuToggle.setAttribute("aria-expanded", abierto);
 });
 
 links.forEach(function(link) {
     link.addEventListener("click", function() {
         navUl.classList.remove("abierto");
+        menuToggle.setAttribute("aria-expanded", "false");
     });
 });
 const horaActual = new Date().getHours();
