@@ -23,15 +23,15 @@ h1, h2 {
 /* Cabecera */
 header {
     background-color: #0a0a14;
-    color: #39ff14;
+    color:  #ff3131;
     padding: 25px;
     text-align: center;
-    border-bottom: 2px solid #39ff14;
-    box-shadow: 0 0 15px #39ff14;
+    border-bottom: 2px solid  #ff3131;
+    box-shadow: 0 0 15px  #ff3131;
 }
 
 header h1 {
-    text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+    text-shadow: 0 0 10px  #ff3131, 0 0 20px  #ff3131;
     margin-bottom: 15px;
 }
 
@@ -63,9 +63,9 @@ section {
     margin: 40px auto;
     padding: 25px;
     background: #14142b;
-    border: 1px solid #39ff14;
+    border: 1px solid  #ff3131;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(57, 255, 20, 0.2);
+    box-shadow: 0 0 10px rgba(255, 49, 49, 0.2);
 }
 
 section h2 {
@@ -79,9 +79,9 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #0a0a14;
-    color: #39ff14;
+    color:  #ff3131;
     margin-top: 40px;
-    border-top: 2px solid #39ff14;
+    border-top: 2px solid  #ff3131;
 }
 /* ---- Diseño responsive (pantallas angostas, ej. celulares) ---- */
 section#juegos { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; } .juego-card { background: #0a0a14; border: 1px solid #ff2ec4; border-radius: 8px; padding: 10px; width: 150px; text-align: center; } .juego-card img { width: 100%; border-radius: 4px; } .juego-card p { margin-top: 8px; color: #e0e0ff; } @media (max-width: 600px) { header h1 { font-size: 1.4rem; } nav ul { flex-direction: column; align-items: center; gap: 12px; } section { margin: 20px 15px; padding: 18px; } section h2 { font-size: 1.3rem; } body { font-size: 0.95rem; } }
@@ -108,19 +108,19 @@ section#juegos { display: flex; flex-wrap: wrap; gap: 20px; justify-content: cen
 
 .skill-bar {
     background: #0a0a14;
-    border: 1px solid #39ff14;
+    border: 1px solid  #ff3131;
     border-radius: 6px;
     overflow: hidden;
     height: 18px;
 }
 
 .skill-level {
-    background: linear-gradient(90deg, #39ff14, #ff2ec4);
+    background: linear-gradient(90deg,  #ff3131, #ff2ec4);
     height: 100%;
 }
 nav a.activo {
     color: #0d0d1a;
-    background-color: #39ff14;
+    background-color:  #ff3131;
     padding: 4px 10px;
     border-radius: 6px;
     text-shadow: none;
@@ -130,7 +130,7 @@ nav a.activo {
     align-items: center;
     gap: 12px;
     background: #0a0a14;
-    border: 1px solid #39ff14;
+    border: 1px solid  #ff3131;
     border-radius: 8px;
     padding: 12px 16px;
     margin-bottom: 10px;
@@ -144,7 +144,7 @@ nav a.activo {
     position: fixed;
     bottom: 25px;
     right: 25px;
-    background-color: #39ff14;
+    background-color:  #ff3131;
     color: #0d0d1a;
     border: none;
     padding: 12px 20px;
@@ -153,7 +153,7 @@ nav a.activo {
     font-weight: bold;
     font-family: 'Rajdhani', sans-serif;
     display: none;
-    box-shadow: 0 0 15px #39ff14;
+    box-shadow: 0 0 15px  #ff3131;
     z-index: 999;
     cursor: url("cursor-crown.png") 20 5, pointer;
 }
@@ -165,8 +165,8 @@ nav a.activo {
 #menu-toggle {
     display: none;
     background: none;
-    border: 2px solid #39ff14;
-    color: #39ff14;
+    border: 2px solid  #ff3131;
+    color:  #ff3131;
     font-size: 24px;
     padding: 8px 16px;
     border-radius: 6px;
@@ -188,7 +188,7 @@ nav a.activo {
     }
 }
 #saludo {
-    color: #39ff14;
+    color:  #ff3131;
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 12px;
@@ -218,7 +218,7 @@ section.visible {
 .formulario-contacto input,
 .formulario-contacto textarea {
     background: #0a0a14;
-    border: 1px solid #39ff14;
+    border: 1px solid  #ff3131;
     border-radius: 6px;
     padding: 10px;
     color: #e0e0ff;
@@ -234,7 +234,7 @@ section.visible {
 }
 
 .formulario-contacto button {
-    background-color: #39ff14;
+    background-color:  #ff3131;
     color: #0d0d1a;
     border: none;
     padding: 12px;
@@ -250,10 +250,10 @@ section.visible {
 }
 #modo-toggle {
     background: none;
-    border: 2px solid #39ff14;
-    color: #39ff14;
+    border: 2px solid  #ff3131;
+    color:  #ff3131;
     font-size: 18px;
-    padding: 6px 12px;
+    padding: 12px 16px;
     border-radius: 6px;
     margin: 10px 6px;
     cursor: url("cursor-crown.png") 20 5, pointer;
@@ -276,6 +276,13 @@ body.claro nav a {
     color: #1a1a2e;
 }
 
+   nav a:focus-visible {
+       color: #ff2ec4;
+       text-shadow: 0 0 8px #ff2ec4;
+       outline: 2px solid #ff2ec4;
+       outline-offset: 4px;
+       border-radius: 4px;
+   }
 body.claro nav a:hover {
     color: #c81e1e;
     text-shadow: none;
@@ -354,9 +361,9 @@ body.claro .formulario-contacto button {
 #lightbox-img {
     max-width: 90%;
     max-height: 85%;
-    border: 3px solid #39ff14;
+    border: 3px solid  #ff3131;
     border-radius: 8px;
-    box-shadow: 0 0 25px #39ff14;
+    box-shadow: 0 0 25px  #ff3131;
 }
 
 #lightbox-cerrar {
@@ -377,7 +384,7 @@ body.claro .formulario-contacto button {
 
 .lista-habilidades li {
     background: #0a0a14;
-    border: 1px solid #39ff14;
+    border: 1px solid  #ff3131;
     border-radius: 20px;
     padding: 8px 16px;
     font-weight: bold;
@@ -401,14 +408,14 @@ body.claro .formulario-contacto button {
 }
 
 .btn-principal {
-    background-color: #39ff14;
+    background-color:  #ff3131;
     color: #0d0d1a;
 }
 
 .btn-secundario {
     background-color: transparent;
-    color: #39ff14;
-    border: 1px solid #39ff14;
+    color:  #ff3131;
+    border: 1px solid  #ff3131;
 }
 
 body.claro .btn-principal {
@@ -427,7 +434,7 @@ body.claro .btn-secundario {
     gap: 16px;
     align-items: center;
     background: #0a0a14;
-    border: 1px solid #39ff14;
+    border: 1px solid  #ff3131;
     border-radius: 8px;
     padding: 12px;
     margin-bottom: 15px;
@@ -446,7 +453,7 @@ body.claro .btn-secundario {
 }
 
 .tarjeta-proyecto-texto a {
-    color: #39ff14;
+    color:  #ff3131;
     font-weight: bold;
 }
 
@@ -469,7 +476,7 @@ body.claro .tarjeta-proyecto {
     position: absolute;
     top: -50px;
     left: 10px;
-    background: #39ff14;
+    background:  #ff3131;
     color: #0d0d1a;
     padding: 10px 16px;
     border-radius: 6px;
