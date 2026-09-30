@@ -517,3 +517,26 @@ body.claro #contacto p a {
     gap: 20px;
     justify-content: center;
 }
+
+.tarjeta-omarex-games .tarjeta-proyecto-texto {
+    position: relative;
+    background-image: url('imagenes/tapiz-header.webp');
+    background-size: cover;
+    background-position: center 20%;
+    border-radius: 6px;
+    padding: 10px 14px;
+    overflow: hidden;
+}
+
+.tarjeta-omarex-games .tarjeta-proyecto-texto::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 20, 0.6);
+    pointer-events: none;
+}
+
+.tarjeta-omarex-games .tarjeta-proyecto-texto > * {
+    position: relative;
+    z-index: 1;
+}
