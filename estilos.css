@@ -490,3 +490,16 @@ body.claro .tarjeta-proyecto {
 .saltar-enlace:focus {
     top: 10px;
 }
+#contacto p a {
+    color: #ff3131;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#contacto p a:hover {
+    color: #ff2ec4;
+}
+
+body.claro #contacto p a {
+    color: #c81e1e;
+}
