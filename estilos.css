@@ -84,7 +84,7 @@ footer {
     border-top: 2px solid  #ff3131;
 }
 /* ---- Diseño responsive (pantallas angostas, ej. celulares) ---- */
-section#juegos { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; } .juego-card { background: #0a0a14; border: 1px solid #ff2ec4; border-radius: 8px; padding: 10px; width: 150px; text-align: center; } .juego-card img { width: 100%; border-radius: 4px; } .juego-card p { margin-top: 8px; color: #e0e0ff; } @media (max-width: 600px) { header h1 { font-size: 1.4rem; } nav ul { flex-direction: column; align-items: center; gap: 12px; } section { margin: 20px 15px; padding: 18px; } section h2 { font-size: 1.3rem; } body { font-size: 0.95rem; } }
+section#juegos { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; } .juego-card { background: #0a0a14; border: 1px solid #ff2ec4; border-radius: 8px; padding: 10px; width: 150px; text-align: center; } .juego-card img { width: 100%; height: auto; border-radius: 4px; } .juego-card p { margin-top: 8px; color: #e0e0ff; } @media (max-width: 600px) { header h1 { font-size: 1.4rem; } nav ul { flex-direction: column; align-items: center; gap: 12px; } section { margin: 20px 15px; padding: 18px; } section h2 { font-size: 1.3rem; } body { font-size: 0.95rem; } }
 .juego-card img {
     transition: transform 0.5s ease;
 }
@@ -196,7 +196,7 @@ nav a.activo {
 section {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 section.visible {
@@ -443,6 +443,7 @@ body.claro .btn-secundario {
 .tarjeta-proyecto img {
     width: 220px;
     max-width: 100%;
+    height: auto;
     border-radius: 6px;
     flex-shrink: 0;
 }
