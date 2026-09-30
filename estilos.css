@@ -503,3 +503,9 @@ body.claro .tarjeta-proyecto {
 body.claro #contacto p a {
     color: #c81e1e;
 }
+.clips-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
