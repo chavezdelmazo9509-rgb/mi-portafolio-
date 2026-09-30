@@ -28,6 +28,7 @@ header {
     text-align: center;
     border-bottom: 2px solid  #ff3131;
     box-shadow: 0 0 15px  #ff3131;
+    position: relative;
 }
 
 header h1 {
@@ -186,6 +187,10 @@ nav a.activo {
     nav ul.abierto {
         display: flex;
     }
+
+    .logo {
+        max-width: 200px;
+    }
 }
 #saludo {
     color:  #ff3131;
@@ -249,13 +254,16 @@ section.visible {
     background-color: #ff2ec4;
 }
 #modo-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     background: none;
     border: 2px solid  #ff3131;
     color:  #ff3131;
     font-size: 18px;
     padding: 12px 16px;
     border-radius: 6px;
-    margin: 10px 6px;
+    margin: 0;
     cursor: url("cursor-crown.png") 20 5, pointer;
 }
 
