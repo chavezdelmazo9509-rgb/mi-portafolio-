@@ -540,3 +540,20 @@ body.claro #contacto p a {
     position: relative;
     z-index: 1;
 }
+
+/* Aviso de proyectos hechos con ayuda de IA */
+.nota-ia {
+    font-size: 14px;
+    color: #a0a0c0;
+    font-style: italic;
+}
+
+body.claro .nota-ia {
+    color: #555;
+}
+
+.tarjeta-proyecto-texto code {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 1px 5px;
+    border-radius: 4px;
+}
