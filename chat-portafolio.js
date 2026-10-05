@@ -1,5 +1,5 @@
 // ==========================================================
-//  💬 Lo que dice el chat del PORTAFOLIO
+//  💬 Lo que dice el chat del PORTAFOLIO (respuestas preparadas + IA)
 //
 //  Para agregar una respuesta, copia un bloque { ... }, cambia:
 //    id          un nombre corto sin espacios
@@ -13,12 +13,15 @@ OmarexChat.iniciar({
     titulo: "🤖 Asistente de Omar",
     lado: "izquierda", // a la derecha ya está el botón "Volver arriba"
     etiquetaBoton: "Abrir chat con el asistente de Omar",
-    aviso: "🤖 Soy un asistente automático con respuestas preparadas, no una persona. No escribas datos personales.",
+    aviso: "🤖 Asistente automático con IA, no una persona. Puede equivocarse. No escribas datos personales: lo que no esté en mis respuestas preparadas se envía a Google para generar la respuesta.",
+
+    // Respuestas con IA cuando la pregunta no está en la lista de abajo
+    ia: { url: "https://omarex-puntajes-server.onrender.com/chat", sitio: "portafolio" },
 
     tema: { fondo: "#0a0a14", texto: "#e0e0ff", burbuja: "#1a1a2e", acento: "#ff3131", sobreAcento: "#0d0d1a", linea: "#3a3a5e", enlace: "#ff6b6b" },
     temaClaro: { fondo: "#ffffff", texto: "#1a1a2e", burbuja: "#f1f1f6", acento: "#c81e1e", sobreAcento: "#ffffff", linea: "#dddddd" },
 
-    saludo: "¡Hola! 👋 Soy el asistente automático de Omar. Puedo contarte sobre sus servicios, proyectos y cómo contactarlo. ¿Qué quieres saber?",
+    saludo: "¡Hola! 👋 Soy el asistente automático (con IA) de Omar. Puedo contarte sobre sus servicios, proyectos y cómo contactarlo. ¿Qué quieres saber?",
     noEntendi: "No estoy seguro de haber entendido 😅. Soy un asistente con respuestas preparadas, así que puedo fallar. Prueba con uno de los botones o escríbele directo a Omar: [chavezdelmazo9509@gmail.com](mailto:chavezdelmazo9509@gmail.com) o por el [formulario de contacto](#contacto).",
 
     inicio: ["servicios", "proyectos", "precio", "contacto"],
@@ -99,7 +102,7 @@ OmarexChat.iniciar({
         {
             id: "ia",
             claves: ["eres una persona", "eres humano", "eres un robot", "eres una ia", "eres ia", "inteligencia artificial", "chatgpt", "bot", "robot", "quien eres", "quien eres tu", "que eres"],
-            respuesta: "Soy un asistente automático 🤖: respondo con textos preparados por Omar, no soy una persona ni una inteligencia artificial avanzada. Si necesitas algo que no sé, escríbele directo: [chavezdelmazo9509@gmail.com](mailto:chavezdelmazo9509@gmail.com)",
+            respuesta: "Soy un asistente automático 🤖, no una persona. Respondo con textos preparados por Omar y, si tu pregunta no está en ellos, uso una IA (un modelo de Google) que puede equivocarse. Si necesitas algo seguro, escríbele directo: [chavezdelmazo9509@gmail.com](mailto:chavezdelmazo9509@gmail.com)",
             sugerencias: ["servicios", "contacto"]
         },
         {
