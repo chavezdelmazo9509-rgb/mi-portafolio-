@@ -22,7 +22,7 @@ OmarexChat.iniciar({
     temaClaro: { fondo: "#ffffff", texto: "#1a1a2e", burbuja: "#f1f1f6", acento: "#c81e1e", sobreAcento: "#ffffff", linea: "#dddddd" },
 
     saludo: "¡Hola! 👋 Soy el asistente automático (con IA) de Omar. Puedo contarte sobre sus servicios, proyectos y cómo contactarlo. ¿Qué quieres saber?",
-    noEntendi: "No estoy seguro de haber entendido 😅. Soy un asistente con respuestas preparadas, así que puedo fallar. Prueba con uno de los botones o escríbele directo a Omar: [chavezdelmazo9509@gmail.com](mailto:chavezdelmazo9509@gmail.com) o por el [formulario de contacto](#contacto).",
+    noEntendi: "No estoy seguro de haber entendido 😅. Soy un asistente con respuestas preparadas, así que puedo fallar. Prueba con uno de los botones o escríbele directo a Omar: [omarchavez.web@gmail.com](mailto:omarchavez.web@gmail.com) o por el [formulario de contacto](#contacto).",
 
     inicio: ["servicios", "proyectos", "precio", "contacto"],
 
@@ -77,14 +77,14 @@ OmarexChat.iniciar({
             id: "precio",
             chip: "💰 Precios",
             claves: ["precio", "precios", "cuanto cuesta", "cuanto cobra", "cuanto cobras", "cobras", "cobra", "costo", "costos", "tarifa", "tarifas", "presupuesto", "plazo", "plazos", "cuanto demora", "cuanto tarda", "tiempo de entrega", "pagar", "soles", "dolares"],
-            respuesta: "El precio y el tiempo dependen de lo que necesites: tipo de página, cantidad de secciones, funciones y fechas 💬\nYo no puedo darte cifras porque no quiero inventarlas 🙂. Omar prefiere conocer tu proyecto y luego enviarte una propuesta.\nCuéntale qué necesitas por el [formulario de contacto](#contacto) o escribe a [chavezdelmazo9509@gmail.com](mailto:chavezdelmazo9509@gmail.com).",
+            respuesta: "El precio y el tiempo dependen de lo que necesites: tipo de página, cantidad de secciones, funciones y fechas 💬\nYo no puedo darte cifras porque no quiero inventarlas 🙂. Omar prefiere conocer tu proyecto y luego enviarte una propuesta.\nCuéntale qué necesitas por el [formulario de contacto](#contacto) o escribe a [omarchavez.web@gmail.com](mailto:omarchavez.web@gmail.com).",
             sugerencias: ["servicios", "contacto", "proyectos"]
         },
         {
             id: "contacto",
             chip: "✉️ Contacto",
             claves: ["contacto", "contactar", "contactarlo", "correo", "email", "mail", "escribir", "escribirle", "hablar", "mensaje", "comunicarme", "whatsapp", "telefono", "numero", "llamar"],
-            respuesta: "Puedes contactar a Omar así ✉️\n• Correo: [chavezdelmazo9509@gmail.com](mailto:chavezdelmazo9509@gmail.com)\n• [Formulario de contacto](#contacto) en esta página\n• TikTok: [@omarex690](https://www.tiktok.com/@omarex690)\n• YouTube: [@omarex_official](https://www.youtube.com/@omarex_official)\nNo tengo un número de WhatsApp para darte; usa el correo o el formulario.",
+            respuesta: "Puedes contactar a Omar así ✉️\n• Correo: [omarchavez.web@gmail.com](mailto:omarchavez.web@gmail.com)\n• [Formulario de contacto](#contacto) en esta página\n• TikTok: [@omarex690](https://www.tiktok.com/@omarex690)\n• YouTube: [@omarex_official](https://www.youtube.com/@omarex_official)\nNo tengo un número de WhatsApp para darte; usa el correo o el formulario.",
             sugerencias: ["servicios", "precio", "cv"]
         },
         {
@@ -102,7 +102,7 @@ OmarexChat.iniciar({
         {
             id: "ia",
             claves: ["eres una persona", "eres humano", "eres un robot", "eres una ia", "eres ia", "inteligencia artificial", "chatgpt", "bot", "robot", "quien eres", "quien eres tu", "que eres"],
-            respuesta: "Soy un asistente automático 🤖, no una persona. Respondo con textos preparados por Omar y, si tu pregunta no está en ellos, uso una IA (un modelo de Google) que puede equivocarse. Si necesitas algo seguro, escríbele directo: [chavezdelmazo9509@gmail.com](mailto:chavezdelmazo9509@gmail.com)",
+            respuesta: "Soy un asistente automático 🤖, no una persona. Respondo con textos preparados por Omar y, si tu pregunta no está en ellos, uso una IA (un modelo de Google) que puede equivocarse. Si necesitas algo seguro, escríbele directo: [omarchavez.web@gmail.com](mailto:omarchavez.web@gmail.com)",
             sugerencias: ["servicios", "contacto"]
         },
         {

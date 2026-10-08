@@ -54,8 +54,8 @@ nav a {
 }
    nav a, button, a { cursor: url("cursor-crown.png") 20 5, pointer; }
 nav a:hover {
-    color: #ff2ec4;
-    text-shadow: 0 0 8px #ff2ec4;
+    color: #ff3131;
+    text-shadow: 0 0 8px #ff3131;
 }
 
 /* Secciones */
@@ -63,7 +63,7 @@ section {
     max-width: 800px;
     margin: 40px auto;
     padding: 25px;
-    background: #14142b;
+    background: #1a1a1a;
     border: 1px solid  #ff3131;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(255, 49, 49, 0.2);
@@ -71,8 +71,8 @@ section {
 
 section h2 {
     margin-bottom: 15px;
-    color: #ff2ec4;
-    text-shadow: 0 0 6px #ff2ec4;
+    color: #ff3131;
+    text-shadow: 0 0 6px #ff3131;
 }
 
 /* Pie de página */
@@ -85,7 +85,7 @@ footer {
     border-top: 2px solid  #ff3131;
 }
 /* ---- Diseño responsive (pantallas angostas, ej. celulares) ---- */
-section#juegos { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; } .juego-card { background: #0a0a14; border: 1px solid #ff2ec4; border-radius: 8px; padding: 10px; width: 150px; text-align: center; } .juego-card img { width: 100%; height: auto; border-radius: 4px; } .juego-card p { margin-top: 8px; color: #e0e0ff; } @media (max-width: 600px) { header h1 { font-size: 1.4rem; } nav ul { flex-direction: column; align-items: center; gap: 12px; } section { margin: 20px 15px; padding: 18px; } section h2 { font-size: 1.3rem; } body { font-size: 0.95rem; } }
+section#juegos { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; } .juego-card { background: #0a0a14; border: 1px solid #ff3131; border-radius: 8px; padding: 10px; width: 150px; text-align: center; } .juego-card img { width: 100%; height: auto; border-radius: 4px; } .juego-card p { margin-top: 8px; color: #e0e0ff; } @media (max-width: 600px) { header h1 { font-size: 1.4rem; } nav ul { flex-direction: column; align-items: center; gap: 12px; } section { margin: 20px 15px; padding: 18px; } section h2 { font-size: 1.3rem; } body { font-size: 0.95rem; } }
 .juego-card img {
     transition: transform 0.5s ease;
 }
@@ -94,7 +94,7 @@ section#juegos { display: flex; flex-wrap: wrap; gap: 20px; justify-content: cen
     transform: scale(1.30);
 }
 
- .tiktok-embed { border: 3px solid #ff2ec4 !important; border-radius: 12px !important; box-shadow: 0 0 15px #ff2ec4; overflow: hidden; }
+ .tiktok-embed { border: 3px solid #ff3131 !important; border-radius: 12px !important; box-shadow: 0 0 15px #ff3131; overflow: hidden; }
  .logo { max-width: 500px; width: 100%; display: block; margin: 0 auto; border-radius: 8px; }
 .skill {
     margin-bottom: 15px;
@@ -116,7 +116,7 @@ section#juegos { display: flex; flex-wrap: wrap; gap: 20px; justify-content: cen
 }
 
 .skill-level {
-    background: linear-gradient(90deg,  #ff3131, #ff2ec4);
+    background: linear-gradient(90deg,  #ff3131, #ff3131);
     height: 100%;
 }
 nav a.activo {
@@ -160,8 +160,8 @@ nav a.activo {
 }
 
 #volver-arriba:hover {
-    background-color: #ff2ec4;
-    box-shadow: 0 0 15px #ff2ec4;
+    background-color: #ff3131;
+    box-shadow: 0 0 15px #ff3131;
 }
 #menu-toggle {
     display: none;
@@ -216,7 +216,7 @@ section.visible {
 }
 
 .formulario-contacto label {
-    color: #ff2ec4;
+    color: #ff3131;
     font-weight: bold;
 }
 
@@ -234,8 +234,8 @@ section.visible {
 .formulario-contacto input:focus,
 .formulario-contacto textarea:focus {
     outline: none;
-    border-color: #ff2ec4;
-    box-shadow: 0 0 8px #ff2ec4;
+    border-color: #ff3131;
+    box-shadow: 0 0 8px #ff3131;
 }
 
 .formulario-contacto button {
@@ -251,7 +251,7 @@ section.visible {
 }
 
 .formulario-contacto button:hover {
-    background-color: #ff2ec4;
+    background-color: #ff3131;
 }
 #modo-toggle {
     position: absolute;
@@ -285,9 +285,9 @@ body.claro nav a {
 }
 
    nav a:focus-visible {
-       color: #ff2ec4;
-       text-shadow: 0 0 8px #ff2ec4;
-       outline: 2px solid #ff2ec4;
+       color: #ff3131;
+       text-shadow: 0 0 8px #ff3131;
+       outline: 2px solid #ff3131;
        outline-offset: 4px;
        border-radius: 4px;
    }
@@ -378,7 +378,7 @@ body.claro .formulario-contacto button {
     position: absolute;
     top: 20px;
     right: 35px;
-    color: #ff2ec4;
+    color: #ff3131;
     font-size: 45px;
     font-weight: bold;
     cursor: url("cursor-crown.png") 20 5, pointer;
@@ -457,7 +457,7 @@ body.claro .btn-secundario {
 }
 
 .tarjeta-proyecto-texto h3 {
-    color: #ff2ec4;
+    color: #ff3131;
     margin-bottom: 6px;
 }
 
@@ -505,7 +505,7 @@ body.claro .tarjeta-proyecto {
 }
 
 #contacto p a:hover {
-    color: #ff2ec4;
+    color: #ff3131;
 }
 
 body.claro #contacto p a {
