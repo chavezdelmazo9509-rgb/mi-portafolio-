@@ -564,3 +564,30 @@ body.claro .nota-ia {
     padding: 1px 5px;
     border-radius: 4px;
 }
+
+/* ===== Botones de WhatsApp ===== */
+.btn-wa { display: inline-flex; align-items: center; gap: 8px; }
+.btn-wa svg { flex-shrink: 0; }
+.wa-contacto {
+    display: flex; align-items: center; gap: 14px;
+    max-width: 420px; margin: 10px 0 22px; padding: 14px 20px;
+    background: #25d366; color: #0b1a10; text-decoration: none; border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, .35); transition: transform .2s, box-shadow .2s;
+}
+.wa-contacto:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(37, 211, 102, .5); }
+.wa-contacto svg { width: 34px; height: 34px; flex-shrink: 0; }
+.wa-contacto span { display: flex; flex-direction: column; line-height: 1.25; }
+.wa-contacto strong { font-size: 18px; }
+.wa-contacto small { font-size: 14px; opacity: .8; }
+#wa-flotante {
+    position: fixed; right: 22px; bottom: 22px; z-index: 998;
+    width: 58px; height: 58px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: #25d366; color: #fff;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, .5);
+    animation: wa-pulso 2.5s ease-in-out infinite;
+}
+#wa-flotante:hover { transform: scale(1.08); }
+@keyframes wa-pulso { 50% { box-shadow: 0 6px 20px rgba(37, 211, 102, .5), 0 0 0 10px rgba(37, 211, 102, .15); } }
+#volver-arriba { bottom: 92px; }
+@media (prefers-reduced-motion: reduce) { #wa-flotante { animation: none; } }
