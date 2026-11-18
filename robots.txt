@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://chavezdelmazo9509-rgb.github.io/mi-portafolio-/sitemap.xml
